@@ -1,0 +1,8 @@
+
+What this PowerShell command does:
+
+    The -ep Bypass -nop flags disable PowerShell's usual restrictions, allowing scripts to run without interference from security settings or user profiles.
+    The DownloadFile method pulls a file (in this case, IS.ps1) from a remote server (https://raw.githubusercontent.com/MM-WarevilleTHM/IS/refs/heads/main/IS.ps1) and saves it in the C:\\ProgramData\\ directory on the target machine.
+    Once downloaded, the script is executed with PowerShell using the iex command, which triggers the downloaded s.ps1 file.
+
+If you visit the contents of the file to be downloaded using your browser (https://raw.githubusercontent.com/MM-WarevilleTHM/IS/refs/heads/main/IS.ps1), you will see just how lucky we are that we are not currently using Windows.
